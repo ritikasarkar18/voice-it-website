@@ -1,20 +1,22 @@
+
 .row{
 	position: relative;
 	top: 90px;
-	font-size: 18;
+	font-size: 16;
 	font-family:Gill Sans, sans-serif;
 	font-weight: bold;
+	flex-wrap: wrap;
 
 }
 
 .row .col-md-4{
 	text-align: center;
-	height:24%;
+	height:25%;
 	border-radius: 15px 45px;
 	border: 2px solid black;
 	width:33%;
 	margin:1px;
-	background-color: #ffffff;
+	background-image: linear-gradient(#ffb366, #ffff66);;
 	opacity: 0.7;
 
 }
@@ -39,13 +41,42 @@ img{
 	margin-top: 70px;
 	font-family: Stencil Std, fantasy;
 	color: white;
-	opacity: 0.7;
+	opacity: 0.8;
 }
 
 .bg-image{
-	background-image: url('/voice-it-website/Contact page/img/micback.jpg');
+	background-image: url('/voice-it-website/Samples/Samples/BG-01@2x.png');
 	background-repeat: no-repeat;
   	background-attachment: fixed;
-  	background-size: cover;
+	top: 0;
+	left: 0;
+	bottom:0;
+  	background-size: 100% 100%;
   	height:100%;
+
 }
+
+@media screen and (max-width: 992px){
+.row .col-md-4{
+	flex:50%;
+	margin:auto;
+	width:50%;
+
+}
+
+}
+@media screen and (max-width: 768px){
+.row .col-md-4{
+	flex:wrap;
+	margin:auto;
+	width:50%;
+}
+img{
+	display:none;
+}
+
+.contact-email{
+	word-wrap: break-word;
+}
+}
+
